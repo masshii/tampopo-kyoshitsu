@@ -1,66 +1,98 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# たんぽぽ書道教室
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+書道教室の先生と保護者をつなぐ連絡用webアプリ
+![image](https://user-images.githubusercontent.com/106829132/232290769-d352beef-05cf-436d-b517-3e0861d79d33.png)
 
-## About Laravel
+## 作成した目的
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+運営者（先生）から生徒の状況や、教室での活動内容を効率的に保護者と共有できるシステムが必要との要望があり開発を行った。
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## サイト概要
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+書道教室が運営するwebアプリです。
 
-## Learning Laravel
+ユーザー（保護者）の管理や生徒情報の管理ができます。
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+書道教室からのお知らせ新規投稿作成時に管理者からユーザーにメール送信でお知らせできます。
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+お知らせの投稿に既読機能、いいね機能、コメント機能を搭載しユーザー参加型にしました。
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## たんぽぽ書道教室URL
 
-## Laravel Sponsors
+https://tampopo-kyoshitsu.com
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+ご登録はこちらより会員登録後、ログインしてください。
 
-### Premium Partners
+レスポンシブ対応していますのでスマートフォンからでもご利用いただけます。
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## 他のリポジトリ
 
-## Contributing
+ローカルの開発環境、本番環境（Xserver）
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 機能一覧
 
-## Code of Conduct
+・ ユーザー側機能
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+　◦ 新規登録、ログイン、ログアウト機能
+ 
+　◦ メール認証機能
+ 
+　◦ アバター登録、表示機能
+ 
+　◦ アカウント編集機能
+ 
+　◦ コメント機能
+ 
+　◦ 投稿にいいねを付与、削除機能
+ 
+　◦ 既読機能
+ 
+　◦ お問い合わせ機能 
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+・ 管理者側機能
 
-## License
+　◦ 各ユーザーのアカウント編集、削除機能
+ 
+　◦ お知らせ投稿、編集、削除機能
+ 
+　◦ 生徒登録、編集、削除機能
+ 
+ 
+ ・その他機能
+ 
+ 　◦ページネーション機能
+ 
+ 　◦Gate、Policy機能
+ 
+ 　◦Notification機能
+ 
+## 使用技術(実行環境)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+・ 開発環境 : Laravel Sail （Doker使用）
+
+・ 言語 : PHP
+
+・ フレームワーク : Laravel Framework 10.5.1
+
+・ データベース : MYSQL 8.0.32
+
+## テーブル設計
+
+![image](https://user-images.githubusercontent.com/106829132/232238636-e5a76c0b-7114-4272-8ffe-558d0139e9e4.png)
+
+## ER図
+
+![image](https://user-images.githubusercontent.com/106829132/232240834-7f0b3966-f635-4b44-a431-3e0f8566e1c1.png)
+
+## 環境構築
+
+最初にcomposer installコマンドを実行してライブラリをインストールしてください。
+
+データベース作成後、php artisan migrateコマンドを実行してテーブルを作成してください。
+
+.envファイルは、.env.exampleを参考に、別途ご用意ください。
+
+## アカウントの種類
+
+管理者、一般ユーザー、テストユーザー
