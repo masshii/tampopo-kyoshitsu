@@ -1,6 +1,6 @@
 # たんぽぽ書道教室
 
-書道教室の先生と保護者をつなぐ連絡用webアプリ
+書道教室の先生と保護者をつなぐコミュニティwebアプリ
 ![image](https://user-images.githubusercontent.com/106829132/232290769-d352beef-05cf-436d-b517-3e0861d79d33.png)
 
 ## 作成した目的
